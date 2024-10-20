@@ -7,7 +7,7 @@ impl ToString for HttpHeaders {
     fn to_string(&self) -> String {
         self.0
             .iter()
-            .map(|header| header.to_string())
+            .map(|h| h.to_string())
             .collect::<Vec<String>>()
             .join("\r\n")
     }
